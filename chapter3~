@@ -1,0 +1,58 @@
+answewr 1)
+
+function min(a,b){
+  if (a<b){
+    return a;
+  }  else if (b<a){
+    return b;
+  }
+  else {
+    return a=b ;
+  }
+}
+
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
+
+
+answer 2)
+function isEven(n){
+    if(n===0){
+        return(true);
+    }else if (n === 1){
+        return(false);
+    }else {
+        return(isEven(n - 2));
+    }
+}
+
+
+
+console.log(isEven(50));
+// → true
+console.log(isEven(75));
+// → false
+console.log(isEven(-1));
+// → ??
+
+
+answer 3)
+
+function countBs(str) {
+  return countChar(str, 'B');
+}
+
+function countChar(str, chr) {
+  var counter = 0
+  for (var i = 0; i < str.length; i++) {
+    if (str.charAt(i) === chr) {counter++;}
+  }
+  return counter;
+}
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
